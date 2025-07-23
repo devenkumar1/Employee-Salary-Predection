@@ -55,4 +55,4 @@ input_scaled = scaler.transform(input_data)
 # Predict
 if st.button("Predict Salary"):
     prediction = model.predict(input_scaled)[0]
-    st.success(f"Estimated Annual Salary: ₹{int(prediction):,}")
+    st.success(f"Estimated Annual Salary: ${int(prediction):,}")
