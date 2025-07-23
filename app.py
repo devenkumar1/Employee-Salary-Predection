@@ -23,7 +23,7 @@ performance_rating = st.slider("Performance Rating", 1, 5, 3)
 work_hours = st.slider("Work Hours per Week", 20, 80, 40)
 distance = st.slider("Distance from Home (in km)", 0, 100, 10)
 training_hours = st.slider("Training Hours per Year", 0, 200, 20)
-certifications = st.slider("No. of Certifications", 0, 10, 1)
+# certifications = st.slider("No. of Certifications", 0, 10, 1)
 
 # Label Encoding map (must match training)
 gender_map = {"Male": 0, "Female": 1, "Other": 2}
@@ -46,8 +46,7 @@ input_data = np.array([[
     performance_rating,
     work_hours,
     distance,
-    training_hours,
-    certifications
+    training_hours
 ]])
 
 # Scale input
